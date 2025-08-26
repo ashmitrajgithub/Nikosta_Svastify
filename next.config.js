@@ -10,9 +10,6 @@ const nextConfig = {
     domains: ["placeholder.svg"],
     unoptimized: true,
   },
-  experimental: {
-    appDir: true,
-  },
 }
 
 module.exports = nextConfig

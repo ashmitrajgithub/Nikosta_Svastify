@@ -67,8 +67,17 @@
   * {
     @apply border-border;
   }
+
+  /* Explicitly set html and body background to white to prevent any yellow background issues */
+  html {
+    background-color: white !important;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
   body {
     @apply bg-background text-foreground;
+    background-color: white !important;
     /* Updated font stack for premium typography */
     font-family: "Montserrat", "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, sans-serif;
@@ -314,12 +323,6 @@ div {
   h3 {
     font-size: 1.75rem;
   }
-}
-
-/* Smooth scrolling with offset for fixed headers */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 /* Loading states */
